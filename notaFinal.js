@@ -1,4 +1,6 @@
 let grade = -10
+
+function getGrade (grade){
 let gradeA = grade >= 90 && grade <= 100
 let gradeB = grade >= 80 && grade <= 89
 let gradeC = grade >= 70 && grade <= 79
@@ -21,4 +23,13 @@ if (gradeA) {
     finalGrade = "Nota inválida"
 }
 
-console.log(finalGrade)
+return finalGrade
+}
+
+console.log(getGrade(1))
+console.log(getGrade(0))
+console.log(getGrade(-1))
+console.log(getGrade(100))
+console.log(getGrade(89))
+console.log(getGrade(76))
+console.log(getGrade(65))
